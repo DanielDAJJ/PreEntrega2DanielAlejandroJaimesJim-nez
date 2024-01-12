@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
+/**************************************** Cuerpo ****************************************/
+body{
+    font-family: "Comfortaa";
+    color: #1C2C35;
+    background-color: #FBFEF9;
+    line-height: 1.75em;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-areas: "header header header"
+    "main main main"
+    "footer footer footer";
+    gap: 1em;
+    max-width: 100%;
+}
+a{
+    text-decoration: none;
+    color: #1C2C35;
+    font-size: 0.95em;
+}
+img{
+    width: 100%;
+    height: auto;
+}
+header{
+    grid-area: header;
+}
+main{
+    grid-area: main;
+    padding: 0 2em;
+}
+footer{
+    grid-area: footer;
+}
+h2{
+    color: #FF3524;
+}
+/**************************************** menu desktop ****************************************/
+.header{
+    position: sticky;
+    top: 0;
+    background-color: #FBFEF9;
+    width: 100%;
+    padding: 0 2em 0.5em 2em;
+    z-index: 2;
+}
+.header__Nav__Home{
+    display: block;
+    max-width: 150px;
+    height: auto;
+}
+
+.header__Nav__Ul li a:hover{
+    color: #FF3524;
+}
+/**************************************** section slide ****************************************/
+.slide{
+    display: flex;
+    height: calc(50%/2);
+    overflow: hidden;
+    align-items: center;
+    margin: 0 0 2.5em 0;
+}
+.slide__Cont{
+    width: 100%;
+    flex: 1 0 100%;
+    animation: slide 15s infinite;
+}
+@keyframes slide{
+    0%, 10%{
+        transform: translateX(0);
+    }
+    20%, 30%{
+        transform: translateX(-100%);
+    }
+    40%, 50%{
+        transform: translateX(-200%);
+    }
+    60%, 70%{
+        transform: translateX(-300%);
+    }
+    80%, 90% {
+        transform: translateX(-400%);
+    }
+    100%{
+        transform: initial;
+    }
+}
+/**************************************** section detalle ****************************************/
+.sobreNos{
+    width: 100%;
+    margin: 2.5em 0;
+    border: solid #FF3524;
+    border-width: 2px 0;
+    padding: 2em 0;
+}
+.sobreNos__Video{
+    width: auto;
+    display: flex;
+    align-items: center;
+}
+.sobreNos__Video iframe{
+    width: 480px;
+    aspect-ratio: 16/ 9;
+}
+.sobreNos__Texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 3em;
+}
+.sobreNos__Texto p{
+    font-size: 1.25em;
+}
+/**************************************** cajas Sorpresa  ****************************************/
+.cajaSor{
+    width: 100%;
+    margin: 2em 0;
+    padding: 2em 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4em;
+    position: relative;
+}
+.cajaSor__Cont{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1em;
+    justify-content: center;
+    justify-items: center;
+}
+.cajaSor__Cont__Card{
+    background-color: #FBFEF9;
+    border-radius: 1em;
+    color: #1C2C35;
+}
+.cajaSor__Cont__Card img{
+    height: 200px;
+    width: auto;
+}
+.cajaSor__BG{
+    background-color: #FFC2BD;
+    width: 98.7vw;
+    height: 250px;
+    position: absolute;
+    top: 50vh;
+    z-index: -1;
+}
+.cajaSor__Boton{
+    width: 20em;
+    height: 3em;
+    padding: 0.5em 0.5em;
+    font-weight: 700;
+    font-size: 1.25em;
+    background-color: #1C2C35;
+    border: none;
+    border-radius: 1em;
+    transition: 0.25s ease all;
+}
+.cajaSor__Boton a{
+    width: 100%;
+    height: 100%;
+    color: #FBFEF9;
+}
+.cajaSor__Boton:hover{
+    background-color: #FBFEF9;
+    border: 1px solid #1C2C35;
+}
+.cajaSor__Boton:hover a{
+    color: #1C2C35;
+}
+/**************************************** eventos  ****************************************/
+.eventos{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3em;
+    margin: 4em 0;
+    padding: 2em 0;
+    border: solid #FF3524;
+    border-width: 2px 0;
+}
+.enventos__Parrafo{
+    font-size: 1.25em;
+}
+/**************************************** clientes  ****************************************/
+.clientes{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+    padding: 2em 0;
+}
+.clientes__Cont{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3em;
+    justify-items: center;
+    align-items: center;
+}
+/**************************************** tablet ****************************************/
+@media (max-width: 1023px) {
+    body{
+        grid-template-areas: "header header"
+        "main main"
+        "footer footer";
+    }
+    /**************************************** menu tablet ****************************************/
+    .header__Nav__Home{
+        width: 125px;
+    }
+    /**************************************** slide ****************************************/
+    .slide{
+        height: calc(25%/2);
+    }
+    /**************************************** Detalle ****************************************/
+    .sobreNos__Video iframe{
+        width: 460px;
+    }
+    .sobreNos__Texto{
+        margin: 2em 0 0 0;
+        gap: 2em;
+    }
+    /**************************************** cajas Sorpresa  ****************************************/
+    .cajaSor__Cont{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+    .cajaSor__BG{
+        height: 600px;
+        top: 28em;
+    }
+}
+/**************************************** celular ****************************************/
+@media (max-width: 759px){
+    body{
+        grid-template-areas: "header"
+        "main"
+        "footer";
+        padding: 0;
+    }
+    main{
+        padding: 0;
+    }
+    /**************************************** slide ****************************************/
+    .slide{
+        height: auto;
+    }
+    /**************************************** detalle ****************************************/
+    .sobreNos__Video iframe{
+        width: 325px;
+    }
+    .sobreNos__Texto{
+        margin-bottom: 0;
+        gap: 2em;
+    }
+    /**************************************** cajas Sorpresa  ****************************************/
+    .cajaSor__Cont{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+    }
+    .cajaSor__BG{
+        height: 1200px;
+        top: 20%;
+    }
+    .cajaSor__Boton{
+        width: 10em;
+        height: 5em;
+    }
+}
