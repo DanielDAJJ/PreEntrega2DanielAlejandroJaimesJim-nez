@@ -7,8 +7,13 @@ body{
     line-height: 1.75em;
     box-sizing: border-box;
     display: grid;
-    grid-template-areas: "header header header"
+    grid-template-areas:
+    "header header header"
     "main main main"
+    "sobreNos sobreNos sobreNos"
+    "cajaSor cajaSor cajaSor"
+    "eventos eventos eventos"
+    "clientes clientes clientes"
     "footer footer footer";
     gap: 1em;
     max-width: 100%;
@@ -27,7 +32,7 @@ header{
 }
 main{
     grid-area: main;
-    padding: 0 2em;
+    height: 70vh;
 }
 footer{
     grid-area: footer;
@@ -56,7 +61,7 @@ h2{
 /**************************************** section slide ****************************************/
 .slide{
     display: flex;
-    height: calc(50%/2);
+    height: 100%;
     overflow: hidden;
     align-items: center;
     margin: 0 0 2.5em 0;
@@ -88,6 +93,7 @@ h2{
 }
 /**************************************** section detalle ****************************************/
 .sobreNos{
+    grid-area: sobreNos;
     width: 100%;
     margin: 2.5em 0;
     border: solid #FF3524;
@@ -114,6 +120,7 @@ h2{
 }
 /**************************************** cajas Sorpresa  ****************************************/
 .cajaSor{
+    grid-area: cajaSor;
     width: 100%;
     margin: 2em 0;
     padding: 2em 0;
@@ -175,6 +182,7 @@ h2{
 }
 /**************************************** eventos  ****************************************/
 .eventos{
+    grid-area: eventos;
     width: 100%;
     height: auto;
     display: flex;
@@ -182,8 +190,6 @@ h2{
     align-items: center;
     justify-content: space-between;
     gap: 3em;
-    margin: 4em 0;
-    padding: 2em 0;
     border: solid #FF3524;
     border-width: 2px 0;
 }
@@ -211,8 +217,13 @@ h2{
 /**************************************** tablet ****************************************/
 @media (max-width: 1023px) {
     body{
-        grid-template-areas: "header header"
+        grid-template-areas:
+        "header header"
         "main main"
+        "sobreNos sobreNos"
+        "cajaSor cajaSor"
+        "eventos eventos"
+        "clientes clientes"
         "footer footer";
     }
     /**************************************** menu tablet ****************************************/
@@ -244,17 +255,23 @@ h2{
 /**************************************** celular ****************************************/
 @media (max-width: 759px){
     body{
-        grid-template-areas: "header"
+        grid-template-areas: 
+        "header"
         "main"
+        "sobreNos"
+        "cajaSor"
+        "eventos"
+        "clientes"
         "footer";
         padding: 0;
     }
     main{
         padding: 0;
+        height: 30vh;
     }
     /**************************************** slide ****************************************/
     .slide{
-        height: auto;
+        height: 100%;
     }
     /**************************************** detalle ****************************************/
     .sobreNos__Video iframe{
