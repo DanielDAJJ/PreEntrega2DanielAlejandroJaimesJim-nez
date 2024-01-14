@@ -35,6 +35,12 @@ main{
 }
 footer{
     grid-area: footer;
+    background-color: #1C2C35;
+    width: 100vw;
+    color: #FBFEF9;
+    padding: 2.5em;
+    display: flex;
+    flex-wrap: wrap;
 }
 h2{
     color: #FF3524;
@@ -293,6 +299,9 @@ h2{
     .eventos{
         margin: 2.5em 0;
         padding: 2em 0;
+    }
+    .enventos__Texto{
+        text-align: center;
     }
     .eventos__Img{
         display: none;
