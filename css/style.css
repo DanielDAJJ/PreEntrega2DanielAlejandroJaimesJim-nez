@@ -259,6 +259,13 @@ h2{
         height: 600px;
         top: 28em;
     }
+    /**************************************** eventos  ****************************************/
+    .enventos__Parrafo{
+        text-align: center;
+    }
+    .eventos__Img{
+        display: none;
+    }
     /**************************************** clientes  ****************************************/
     .clientes__Cont{
         grid-template-columns: 1fr;
