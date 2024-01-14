@@ -122,8 +122,8 @@ h2{
 .cajaSor{
     grid-area: cajaSor;
     width: 100%;
-    margin: 2em 0;
-    padding: 2em 0;
+    margin: 2.5em 0;
+    padding: 2em 2em;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -185,8 +185,7 @@ h2{
     grid-area: eventos;
     width: 100%;
     height: auto;
-    margin: 2em 0;
-    padding: 2em 0;
+    margin: 2.5em 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -195,9 +194,13 @@ h2{
     border: solid #FF3524;
     border-width: 2px 0;
 }
-.enventos__Parrafo{
+.enventos__Texto{
+    display: flex;
+    flex-direction: column;
+    padding: 0 2.7em;
+}
+.enventos__Texto__Parrafo{
     font-size: 1.25em;
-    padding: 0 5em;
 }
 /**************************************** clientes  ****************************************/
 .clientes{
@@ -208,6 +211,7 @@ h2{
     align-items: center;
     justify-content: center;
     gap: 2em;
+    margin: 2.5em 0;
     padding: 2em 0;
 }
 
@@ -288,7 +292,7 @@ h2{
     }
     /**************************************** eventos  ****************************************/
     .enventos__Parrafo{
-        text-align: center;
+        /* text-align: center; */
     }
     .eventos__Img{
         display: none;
