@@ -15,7 +15,6 @@ body{
     "eventos eventos eventos"
     "clientes clientes clientes"
     "footer footer footer";
-    gap: 1em;
     max-width: 100%;
 }
 a{
@@ -219,6 +218,34 @@ h2{
     gap: 2em;
     justify-items: center;
     align-items: center;
+    padding: 2em;
+}
+.clientes__Card{
+    width: 100%;
+    display: flex;
+    gap: 2em;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid #1C2C35;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #FFF1F0;
+}
+.clientes__Card__IMG{
+    width: 60%;
+}
+.clientes__Card__Texto{
+    display: flex;
+    width: 70%;
+    flex-direction: column;
+    padding: 0 2em 0 0;
+    gap: 2em;
+    justify-content: space-between;
+}
+.clientes__Card__Texto :nth-child(1){
+    border-bottom: 2px solid #1C2C35;
+    color: #1C2C35;
+    line-height: 2em;
 }
 /**************************************** tablet ****************************************/
 @media (max-width: 1023px) {
