@@ -216,7 +216,7 @@ h2{
     width: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 3em;
+    gap: 2em;
     justify-items: center;
     align-items: center;
 }
