@@ -198,6 +198,7 @@ h2{
     display: flex;
     flex-direction: column;
     padding: 0 2.7em;
+    gap: 5em;
 }
 .enventos__Texto__Parrafo{
     font-size: 1.25em;
@@ -214,7 +215,6 @@ h2{
     margin: 2.5em 0;
     padding: 2em 0;
 }
-
 .clientes__Cont{
     width: 100%;
     display: grid;
@@ -271,13 +271,12 @@ h2{
     .header__Nav__Home{
         width: 125px;
     }
-    /**************************************** slide ****************************************/
-    
     /**************************************** Detalle ****************************************/
     .sobreNos__Video iframe{
         width: 460px;
     }
     .sobreNos__Texto{
+        text-align: center;
         margin: 2em 0 0 0;
         gap: 2em;
     }
@@ -291,8 +290,9 @@ h2{
         top: 28em;
     }
     /**************************************** eventos  ****************************************/
-    .enventos__Parrafo{
-        /* text-align: center; */
+    .eventos{
+        margin: 2.5em 0;
+        padding: 2em 0;
     }
     .eventos__Img{
         display: none;
@@ -356,5 +356,13 @@ h2{
     }
     .enventos__Parrafo{
         padding: 0 2em;
+    }
+    /**************************************** clientes  ****************************************/
+    .clientes__Card{
+        flex-direction: column;
+    }
+    .clientes__Card__IMG{
+        width: 100%;
+        height: auto;
     }
 }
