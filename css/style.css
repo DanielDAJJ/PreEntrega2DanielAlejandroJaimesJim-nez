@@ -152,7 +152,25 @@ h2{
 .cajaSor__Cont__Card{
     background-color: #FBFEF9;
     border-radius: 1em;
+    border: 2px solid #1C2C35;
     color: #1C2C35;
+    overflow: hidden;
+    gap: 2em;
+}
+.card-body h5{
+    color: #FF3524;
+    margin-bottom: 1em;
+}
+.card-body p{
+    margin-bottom: 1.5em;
+}
+.cajaSor__Cont__Card__Boton{
+    width: auto;
+    color: #FBFEF9;
+    background-color: #1C2C35;
+}
+.cajaSor__Cont__Card__Boton:hover{
+    border: 1px solid #1C2C35;
 }
 .cajaSor__Cont__Card img{
     height: 200px;
