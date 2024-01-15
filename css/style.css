@@ -314,6 +314,54 @@ footer :last-child{
     grid-column: 9 / 13;
     text-align: center;
 }
+/**************************************** Página cajas sorpesa ****************************************/
+.pag__Cajasor{
+    max-width: 100%;
+    height: auto;
+    margin: 2.5em;
+    padding: 2em 0;
+    display: grid;
+    grid-template-areas: 
+    "navP producto producto"
+    "navP producto producto"
+    "navP producto producto";
+    grid-template-columns: 20% auto auto;
+    gap: 2em;
+}
+.pag__Cajasor__Nav{
+    grid-area: navP;
+    background-color: #FFF1F0;
+    justify-self: center;
+    width: 100%;
+    padding: 2.5em;
+    border-right: 2px solid #1C2C35;
+    display: flex;
+    flex-direction: column;
+}
+.pag__Cajasor__Nav__Cabeza{
+    font-size: 2em;
+    text-align: center;
+    border-bottom: 2px solid #1C2C35;
+    line-height: 1.5em;
+    margin: 0 0 2em 0;
+}
+.pag__Cajasor__Nav__Lista{
+    list-style: none;
+    padding: 0;
+    font-size: 1.25em;
+    line-height: 2em;
+}
+.pag__Cajasor__Nav__Lista :hover a{
+    color: #FF3524;
+    text-decoration: underline;
+}
+.pag__Cajasor__Contenido{
+    grid-area: producto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2em;
+    justify-items: center;
+}
 /**************************************** tablet ****************************************/
 @media (max-width: 1023px) {
     body{
