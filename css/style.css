@@ -222,7 +222,6 @@ h2{
     justify-content: center;
     gap: 2em;
     margin: 2.5em 0;
-    padding: 2em 0;
 }
 .clientes__Cont{
     width: 100%;
@@ -231,11 +230,13 @@ h2{
     gap: 2em;
     justify-items: center;
     align-items: center;
-    padding: 2em;
+    padding: 0 2.5em;
 }
 .clientes__Card{
     width: 100%;
+    max-height: 50%;
     display: flex;
+    padding: 5em 0 2em 0;
     gap: 2em;
     align-items: center;
     justify-content: space-between;
@@ -245,7 +246,7 @@ h2{
     background-color: #FFF1F0;
 }
 .clientes__Card__IMG{
-    width: 60%;
+    width: 30%;
 }
 .clientes__Card__Texto{
     display: flex;
@@ -350,6 +351,8 @@ footer :last-child{
     /**************************************** clientes  ****************************************/
     .clientes__Cont{
         grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, auto);
+        gap: 1em;
     }
     /**************************************** Footer  ****************************************/
     footer :nth-child(1){
@@ -438,12 +441,17 @@ footer :last-child{
         padding: 0 2em;
     }
     /**************************************** clientes  ****************************************/
+    .clientes{
+        text-align: center;
+    }
     .clientes__Card{
         flex-direction: column;
+        padding: 0;
+        max-height: 100%;
+        text-align: left;
     }
     .clientes__Card__IMG{
         width: 100%;
-        height: auto;
     }
     /**************************************** Footer  ****************************************/
     footer :nth-child(1){
