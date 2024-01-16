@@ -363,8 +363,86 @@ footer :last-child{
     justify-items: center;
 }
 /**************************************** Página Eventos ****************************************/
-
-
+.pag__Eventos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    margin: 2em 0;
+    padding: 0 2.5em;
+    gap: 2.5em;
+    justify-items: center;
+    align-items: center;
+    line-height: 2em;
+}
+.pag__Eventos__Texto{
+    display: flex;
+    flex-direction: column;
+    grid-column: 1/3;
+    gap: 5em;
+    padding-right: 2em;
+}
+.pag__Eventos__Texto p{
+    font-size: 1.3em;
+    line-height: 1.5em;
+}
+.pag__Eventos__Form{
+    display: flex;
+    flex-direction: column;
+    gap: 2.75em;
+    border-left: 2px solid #FF3524;
+    padding-left: 2em;
+}
+.pag__Eventos__Form form{
+    display: flex;
+    flex-direction: column;
+    gap: 1.05em;
+}
+.pag__Eventos__Form form legend{
+    font-size: 1em;
+    line-height: 1.5em;
+}
+.pag__Eventos__Form form input{
+    border: none;
+    width: 50%;
+    border-bottom: 2px solid #1C2C35;
+    background-color: #FBFEF9;
+}
+.pag__Eventos__Form form select, .pag__Eventos__Form form button {
+    background-color: #1C2C35;
+    color: #FBFEF9;
+    border: none;
+    width: 150px;
+    height: 35px;
+}
+.pag__Eventos__Form form textarea{
+    border: none;
+    background-color: #FBFEF9;
+    border-right: 2px solid #1C2C35;
+    border-bottom: 2px solid #1C2C35;
+}
+.pag__Eventos__Slide{
+    width: 98.9vw;
+    height: 50vh;
+    overflow: hidden;
+    display: flex;
+    position: relative;
+}
+.pag__Eventos__Slide :nth-child(2){
+    position: relative;
+    top: -70%;
+}
+.pag__Eventos__Slide :nth-child(3){
+    position: relative;
+    top: -65%;
+}
+.pag__Eventos__Slide :nth-child(4){
+    position: relative;
+    top: -40%;
+}
+.pag__Eventos__Slide :nth-child(5){
+    position: relative;
+    top: -40%;
+}
 /**************************************** tablet ****************************************/
 @media (max-width: 1023px) {
     body{
