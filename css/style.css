@@ -452,10 +452,12 @@ footer :last-child{
         "producto producto"
         "producto producto";
         grid-template-columns: auto;
+        margin: 0 2.5em;
     }
     .pag__Cajasor__Nav{
         border-right: none;
         border-bottom: 2px solid #1C2C35;
+        height: auto;
     }
     .pag__Cajasor__Nav__Lista{
         display: flex;
