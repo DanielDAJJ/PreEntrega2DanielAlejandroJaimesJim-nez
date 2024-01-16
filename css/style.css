@@ -445,6 +445,25 @@ footer :last-child{
         grid-row: 2;
         grid-column: 5 / 9;
     }
+    /**************************************** Página cajas sorpesa ****************************************/
+    .pag__Cajasor{
+        grid-template-areas:
+        "navP navP"
+        "producto producto"
+        "producto producto";
+        grid-template-columns: auto;
+    }
+    .pag__Cajasor__Nav{
+        border-right: none;
+        border-bottom: 2px solid #1C2C35;
+    }
+    .pag__Cajasor__Nav__Lista{
+        display: flex;
+        justify-content: space-between;
+    }
+    .pag__Cajasor__Contenido{
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 /**************************************** celular ****************************************/
 @media (max-width: 759px){
@@ -548,5 +567,19 @@ footer :last-child{
     footer :last-child{
         grid-row: 4;
         grid-column: 1 / 5;
+    }
+    /**************************************** Página cajas sorpesa ****************************************/
+    .pag__Cajasor{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0;
+    }
+    .pag__Cajasor__Nav{
+        padding: 1.5em;
+    }
+    .pag__Cajasor__Contenido{
+        width: 100%;
+        grid-template-columns: auto;
     }
 }
