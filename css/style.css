@@ -23,7 +23,7 @@ a{
     font-size: 0.95em;
 }
 img{
-    width: 100%;
+    max-width: 100%;
     height: auto;
 }
 header{
@@ -40,7 +40,7 @@ footer{
     padding: 2.5em;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     gap: 2em;
     justify-content: center;
     align-items: center;
@@ -152,7 +152,25 @@ h2{
 .cajaSor__Cont__Card{
     background-color: #FBFEF9;
     border-radius: 1em;
+    border: 2px solid #1C2C35;
     color: #1C2C35;
+    overflow: hidden;
+    gap: 2em;
+}
+.card-body h5{
+    color: #FF3524;
+    margin-bottom: 1em;
+}
+.card-body p{
+    margin-bottom: 1.5em;
+}
+.cajaSor__Cont__Card__Boton{
+    width: auto;
+    color: #FBFEF9;
+    background-color: #1C2C35;
+}
+.cajaSor__Cont__Card__Boton:hover{
+    border: 1px solid #1C2C35;
 }
 .cajaSor__Cont__Card img{
     height: 200px;
@@ -222,7 +240,6 @@ h2{
     justify-content: center;
     gap: 2em;
     margin: 2.5em 0;
-    padding: 2em 0;
 }
 .clientes__Cont{
     width: 100%;
@@ -231,11 +248,13 @@ h2{
     gap: 2em;
     justify-items: center;
     align-items: center;
-    padding: 2em;
+    padding: 0 2.5em;
 }
 .clientes__Card{
     width: 100%;
+    max-height: 50%;
     display: flex;
+    padding: 5em 0 2em 0;
     gap: 2em;
     align-items: center;
     justify-content: space-between;
@@ -245,7 +264,7 @@ h2{
     background-color: #FFF1F0;
 }
 .clientes__Card__IMG{
-    width: 60%;
+    width: 30%;
 }
 .clientes__Card__Texto{
     display: flex;
@@ -262,35 +281,86 @@ h2{
 }
 /**************************************** Footer  ****************************************/
 footer :nth-child(1){
-    width: 100%;
+    width: 150px;
     grid-column: 1 / 3;
 }
 footer :nth-child(2){
-    width: 100%;
-    grid-row: 2;
+    width: 42px;
+    grid-column: 9;
+    justify-self: center;
 }
 footer :nth-child(3){
     width: 100%;
     grid-row: 2;
-    grid-column: 2 / 5;
-    text-align: center;
+    grid-column: 1 / 5;
 }
 footer :nth-child(4){
-    grid-row: 2;
+    width: 42px;
     grid-column: 10;
+    justify-self: center;
 }
 footer :nth-child(5){
-    grid-row: 2;
+    width: 42px;
     grid-column: 11;
+    justify-self: center;
 }
 footer :nth-child(6){
-    grid-row: 2;
+    width: 42px;
     grid-column: 12;
+    justify-self: center;
 }
 footer :last-child{
-    grid-row: 3;
-    grid-column: 1 / 13;
+    grid-row: 2;
+    grid-column: 9 / 13;
     text-align: center;
+}
+/**************************************** Página cajas sorpesa ****************************************/
+.pag__Cajasor{
+    max-width: 100%;
+    height: auto;
+    margin: 2.5em;
+    padding: 2em 0;
+    display: grid;
+    grid-template-areas: 
+    "navP producto producto"
+    "navP producto producto"
+    "navP producto producto";
+    grid-template-columns: 20% auto auto;
+    gap: 2em;
+}
+.pag__Cajasor__Nav{
+    grid-area: navP;
+    background-color: #FFF1F0;
+    justify-self: center;
+    width: 100%;
+    padding: 2.5em;
+    border-right: 2px solid #1C2C35;
+    display: flex;
+    flex-direction: column;
+}
+.pag__Cajasor__Nav__Cabeza{
+    font-size: 2em;
+    text-align: center;
+    border-bottom: 2px solid #1C2C35;
+    line-height: 1.5em;
+    margin: 0 0 2em 0;
+}
+.pag__Cajasor__Nav__Lista{
+    list-style: none;
+    padding: 0;
+    font-size: 1.25em;
+    line-height: 2em;
+}
+.pag__Cajasor__Nav__Lista :hover a{
+    color: #FF3524;
+    text-decoration: underline;
+}
+.pag__Cajasor__Contenido{
+    grid-area: producto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2em;
+    justify-items: center;
 }
 /**************************************** tablet ****************************************/
 @media (max-width: 1023px) {
@@ -347,33 +417,33 @@ footer :last-child{
     /**************************************** clientes  ****************************************/
     .clientes__Cont{
         grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, auto);
+        gap: 1em;
     }
     /**************************************** Footer  ****************************************/
     footer :nth-child(1){
+        width: 125px;
         grid-column: 1 / 3;
     }
     footer :nth-child(2){
-        grid-row: 2;
+        grid-column: 5;
     }
     footer :nth-child(3){
         grid-row: 2;
-        grid-column: 2 / 4;
+        grid-column: 1 / 4;
     }
     footer :nth-child(4){
-        grid-row: 2;
         grid-column: 6;
     }
     footer :nth-child(5){
-        grid-row: 2;
         grid-column: 7;
     }
     footer :nth-child(6){
-        grid-row: 2;
         grid-column: 8;
     }
     footer :last-child{
-        grid-row: 3;
-        grid-column: 1 / 9;
+        grid-row: 2;
+        grid-column: 5 / 9;
     }
 }
 /**************************************** celular ****************************************/
@@ -396,15 +466,14 @@ footer :last-child{
         height: 30vh;
     }
     footer{
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(4, 1fr);
         grid-template-rows: auto;
-        justify-items: center;
-        align-content: center;
+        justify-content: center;
+        align-items: center;
     }
     /**************************************** slide ****************************************/
     .slide{
         width: 100%;
-        /* height: 100%; */
     }
     /**************************************** detalle ****************************************/
     .sobreNos__Video iframe{
@@ -438,38 +507,46 @@ footer :last-child{
         padding: 0 2em;
     }
     /**************************************** clientes  ****************************************/
+    .clientes{
+        text-align: center;
+    }
     .clientes__Card{
         flex-direction: column;
+        padding: 0;
+        max-height: 100%;
+        text-align: left;
     }
     .clientes__Card__IMG{
         width: 100%;
-        height: auto;
     }
     /**************************************** Footer  ****************************************/
     footer :nth-child(1){
-        grid-column: 1 / 4 ;
+        grid-column: 1 / 5 ;
+        justify-self: center;
     }
     footer :nth-child(2){
-        grid-row: 2;
-    }
-    footer :nth-child(3){
-        grid-row: 2;
-        grid-column: 2 / 4;
-    }
-    footer :nth-child(4){
         grid-row: 3;
         grid-column: 1;
     }
-    footer :nth-child(5){
+    footer :nth-child(3){
+        grid-row: 2;
+        grid-column: 1 / 5;
+        text-align: center;
+    }
+    footer :nth-child(4){
         grid-row: 3;
         grid-column: 2;
     }
-    footer :nth-child(6){
+    footer :nth-child(5){
         grid-row: 3;
         grid-column: 3;
     }
+    footer :nth-child(6){
+        grid-row: 3;
+        grid-column: 4;
+    }
     footer :last-child{
         grid-row: 4;
-        grid-column: 1 / 4;
+        grid-column: 1 / 5;
     }
 }
