@@ -45,7 +45,13 @@ footer{
     justify-content: center;
     align-items: center;
 }
+footer strong{
+    color: #FBFEF9;
+}
 h2{
+    color: #FF3524;
+}
+strong{
     color: #FF3524;
 }
 /**************************************** menu desktop ****************************************/
@@ -344,6 +350,9 @@ footer :last-child{
     border-bottom: 2px solid #1C2C35;
     line-height: 1.5em;
     margin: 0 0 2em 0;
+}
+.pag__Cajasor__Nav__Cabeza strong{
+    color: #1C2C35;
 }
 .pag__Cajasor__Nav__Lista{
     list-style: none;
