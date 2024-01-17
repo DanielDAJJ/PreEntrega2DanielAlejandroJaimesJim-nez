@@ -547,6 +547,32 @@ footer :last-child{
     .pag__Cajasor__Contenido{
         grid-template-columns: repeat(2, 1fr);
     }
+    /**************************************** Página Eventos ****************************************/
+    .pag__Eventos{
+        grid-template-columns: repeat(2, 1fr);
+        height: auto;
+        text-align: center;
+    }
+    .pag__Eventos__Texto{
+        grid-column: 1/3;
+        padding-right: 0;
+    }
+    .pag__Eventos__Form{
+        grid-column: 1 / 3;
+        align-items: center;
+        padding: 0;
+        border: none;
+    }
+    .pag__Eventos__Form form{
+        align-items: center;
+    }
+    .pag__Eventos__Form label{
+        width: 100%;
+    }
+    .pag__Eventos__Form textarea{
+        width: 80%;
+        border-bottom: 2px solid #1C2C35;
+    }
 }
 /**************************************** celular ****************************************/
 @media (max-width: 759px){
@@ -664,5 +690,37 @@ footer :last-child{
     .pag__Cajasor__Contenido{
         width: 100%;
         grid-template-columns: auto;
+    }
+    /**************************************** Página Eventos ****************************************/
+    .pag__Eventos{
+        grid-template-columns: 1fr;
+        height: auto;
+        text-align: center;
+    }
+    .pag__Eventos__Texto{
+        grid-column: 1 / 2;
+    }
+    .pag__Eventos__Form{
+        grid-column: 1 / 2;
+    }
+    .pag__Eventos__Slide{
+        height: auto;
+        width: 100%;
+        position: none;
+    }
+    .pag__Eventos__Slide :nth-child(1){
+        top: 0;
+    }
+    .pag__Eventos__Slide :nth-child(2){
+        top: 0;
+    }
+    .pag__Eventos__Slide :nth-child(3){
+        top: 0;
+    }
+    .pag__Eventos__Slide :nth-child(4){
+        top: 0;
+    }
+    .pag__Eventos__Slide :last-child{
+        top: 0;
     }
 }
