@@ -443,6 +443,41 @@ footer :last-child{
     position: relative;
     top: -40%;
 }
+/**************************************** Sobre Nosotros ****************************************/
+.pag__SobreNos {
+    display: grid;
+    grid-template-areas: 
+    "sobreNos sobreNos NosIMG"
+    "sobreNos sobreNos NosIMG"
+    "sobreNos sobreNos NosIMG";
+    margin: 2.5em 0;
+    max-width: 100%;
+    padding: 0 2.5em;
+    gap: 2em;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+}
+.pag__SobreNos__Texto{
+    grid-area: sobreNos;
+}
+.pag__SobreNos__Texto__Art{
+    display: flex;
+    flex-direction: column;
+    gap: 6em;
+}
+.pag__SobreNos__Texto__Art p{
+    font-size: 1.5em;
+    line-height: 1.5em;
+}
+.pag__SobreNos__Img{
+    grid-area: NosIMG;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    border-left: 2px solid #FF3524;
+    padding-left: 2em;
+}
 /**************************************** tablet ****************************************/
 @media (max-width: 1023px) {
     body{
@@ -572,6 +607,37 @@ footer :last-child{
     .pag__Eventos__Form textarea{
         width: 80%;
         border-bottom: 2px solid #1C2C35;
+    }
+    /**************************************** Sobre Nosotros ****************************************/
+    .pag__SobreNos{
+        grid-template-areas:
+        "sobreNos sobreNos"
+        "sobreNos sobreNos"
+        "NosIMG NosIMG";
+    }
+    .pag__SobreNos__Texto__Art{
+        display: flex;
+        flex-direction: column;
+        gap: 4em;
+        text-align: center;
+    }
+    .pag__SobreNos__Texto__Art p{
+        font-size: 1.2em;
+        line-height: 1.3em;
+    }
+    .pag__SobreNos__Img{
+        grid-area: NosIMG;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        gap: 1em;
+        border-top: 2px solid #FF3524;
+        border-left: none;
+        padding-top: 2em;
+        padding-left: 0;
+    }
+    .pag__SobreNos__Img--img{
+        width: 30%;
     }
 }
 /**************************************** celular ****************************************/
@@ -722,5 +788,9 @@ footer :last-child{
     }
     .pag__Eventos__Slide :last-child{
         top: 0;
+    }
+    /**************************************** Sobre Nosotros ****************************************/
+    .pag__SobreNos__Img{
+        display: none;
     }
 }
