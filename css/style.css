@@ -487,6 +487,35 @@ footer :last-child{
     border-left: 2px solid #FF3524;
     padding-left: 2em;
 }
+/**************************************** Nuestros Clientes ****************************************/
+.pag__NuestrosClientes{
+    width: 100%;
+    height: auto;
+    margin: 2.5em 0;
+    padding: 0 2.5em;
+}
+.pag__NuestrosClientes__Cont{
+    display: flex;
+    flex-direction: column;
+    gap: 6em;
+    justify-content: center;
+    align-items: center;
+}
+.pag__NuestrosClientes__Cont__Text{
+    font-size: 1.25em;
+    line-height: 1.5em;
+    max-width: 100%;
+}
+.pag__NuestrosClientes__Cont__Text__IMG--1{
+    width: 30%;
+    float: left;
+    margin: 0 2em 2em 0em;
+}
+.pag__NuestrosClientes__Cont__Text__IMG--2{
+    width: 40%;
+    float: right;
+    margin: 2em 0 0 2em;
+}
 /**************************************** tablet ****************************************/
 @media (max-width: 1023px) {
     body{
@@ -648,6 +677,16 @@ footer :last-child{
     .pag__SobreNos__Img--img{
         width: 30%;
     }
+    /**************************************** Nuestros Clientes ****************************************/
+    .pag__NuestrosClientes__Cont h2{
+        text-align: center;
+    }
+    .pag__NuestrosClientes__Cont__Text__IMG--1{
+        width: 40%;
+    }
+    .pag__NuestrosClientes__Cont__Text__IMG--2{
+        margin: 2em 0 2em 2em;
+    }
 }
 /**************************************** celular ****************************************/
 @media (max-width: 759px){
@@ -801,5 +840,14 @@ footer :last-child{
     /**************************************** Sobre Nosotros ****************************************/
     .pag__SobreNos__Img{
         display: none;
+    }
+    /**************************************** Nuestros Clientes ****************************************/
+    .pag__NuestrosClientes__Cont{
+        text-align: center;
+    }
+    .pag__NuestrosClientes__Cont__Text__IMG--1, .pag__NuestrosClientes__Cont__Text__IMG--2{
+        float: none;
+        width: 100%;
+        margin: 2.5em 0 2.5em 0;
     }
 }
